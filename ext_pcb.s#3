@@ -6505,13 +6505,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <label x="71.12" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="1" pin="P"/>
-<wire x1="22.86" y1="149.86" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="CN14" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
-<label x="22.86" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="VIN"/>
 <wire x1="50.8" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="1" pin="O"/>
@@ -6524,6 +6517,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <junction x="38.1" y="154.94"/>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <wire x1="50.8" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="35.56" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CN15" gate="-2" pin="SK"/>
@@ -6859,6 +6853,15 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="238.76" y1="-35.56" x2="238.76" y2="-33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC_IN" class="0">
+<segment>
+<pinref part="SW1" gate="1" pin="P"/>
+<wire x1="22.86" y1="149.86" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="CN14" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
+<label x="22.86" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

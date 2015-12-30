@@ -1106,7 +1106,6 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <part name="X2" library="con-molex" deviceset="53?-08" device="047"/>
 <part name="X3" library="con-molex" deviceset="53?-06" device="047"/>
 <part name="X4" library="con-molex" deviceset="53?-04" device="047"/>
-<part name="X5" library="con-molex" deviceset="53?-04" device="047"/>
 </parts>
 <sheets>
 <sheet>
@@ -1138,10 +1137,6 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <instance part="X4" gate="-2" x="175.26" y="81.28"/>
 <instance part="X4" gate="-3" x="175.26" y="78.74"/>
 <instance part="X4" gate="-4" x="175.26" y="76.2"/>
-<instance part="X5" gate="-1" x="175.26" y="66.04"/>
-<instance part="X5" gate="-2" x="175.26" y="63.5"/>
-<instance part="X5" gate="-3" x="175.26" y="60.96"/>
-<instance part="X5" gate="-4" x="175.26" y="58.42"/>
 </instances>
 <busses>
 </busses>

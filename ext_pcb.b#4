@@ -982,7 +982,7 @@ design rules under a new name.</description>
 <pass name="Default">
 <param name="RoutingGrid" value="25mil"/>
 <param name="AutoGrid" value="0"/>
-<param name="Efforts" value="2"/>
+<param name="Efforts" value="1"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
@@ -1148,13 +1148,15 @@ design rules under a new name.</description>
 <contactref element="CN15" pad="1"/>
 <contactref element="U2" pad="8"/>
 <contactref element="CN24" pad="2"/>
-<wire x1="26.67" y1="80.01" x2="55.88" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="19.715" y1="81.915" x2="26.67" y2="80.01" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="0" y="100.33"/>
+<vertex x="80.01" y="100.33"/>
+<vertex x="80.01" y="0"/>
+</polygon>
 <wire x1="20.32" y1="75.35" x2="19.715" y2="81.915" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="75.35" x2="20.32" y2="75.35" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="91.44" x2="19.715" y2="81.915" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="85.09" x2="16.51" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="91.44" x2="16.51" y2="91.44" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="80.01" x2="19.715" y2="81.915" width="0" layer="19" extent="1-1"/>
 <wire x1="8.3934" y1="62.695" x2="16.51" y2="75.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MW_RX3">
@@ -1429,14 +1431,6 @@ design rules under a new name.</description>
 <contactref element="SW1" pad="2"/>
 <contactref element="CN14" pad="1"/>
 <wire x1="6.35" y1="69.85" x2="6.35" y2="85.09" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$9">
-<polygon width="0.254" layer="16">
-<vertex x="0" y="0"/>
-<vertex x="0" y="100.33"/>
-<vertex x="80.01" y="100.33"/>
-<vertex x="80.01" y="0"/>
-</polygon>
 </signal>
 </signals>
 </board>
