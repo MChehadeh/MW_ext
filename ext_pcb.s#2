@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6457,7 +6457,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="Sheet 1"/>
 <part name="CN2" library="con-molex" deviceset="53?-08" device="047"/>
 <part name="CN3" library="con-molex" deviceset="53?-06" device="047"/>
 <part name="CN5" library="con-molex" deviceset="53?-04" device="047"/>
@@ -6642,6 +6642,51 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="CN24" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="-60.96" x2="177.8" y2="-60.96" width="0.1524" layer="91"/>
 <label x="177.8" y="-60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN4" gate="-4" pin="SK"/>
+<wire x1="109.22" y1="30.48" x2="119.38" y2="30.48" width="0.1524" layer="91"/>
+<label x="111.76" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN10" gate="-4" pin="SK"/>
+<wire x1="200.66" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<label x="200.66" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN11" gate="-2" pin="SK"/>
+<wire x1="175.26" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<label x="175.26" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN12" gate="-2" pin="SK"/>
+<wire x1="200.66" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="200.66" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN13" gate="-2" pin="SK"/>
+<wire x1="226.06" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
+<label x="226.06" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN8" gate="-1" pin="SK"/>
+<wire x1="114.3" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
+<label x="114.3" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN7" gate="-1" pin="SK"/>
+<wire x1="134.62" y1="165.1" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
+<label x="134.62" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN6" gate="-1" pin="SK"/>
+<wire x1="154.94" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
+<label x="154.94" y="165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN9" gate="-1" pin="SK"/>
+<wire x1="200.66" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
+<label x="200.66" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MW_RX3" class="0">
@@ -7150,79 +7195,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="88.9" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CN2_GND" class="0">
-<segment>
-<pinref part="CN2" gate="-1" pin="S"/>
-<wire x1="55.88" y1="73.66" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
-<label x="55.88" y="63.5" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="CN8" gate="-1" pin="SK"/>
-<wire x1="114.3" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
-<label x="114.3" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN7" gate="-1" pin="SK"/>
-<wire x1="134.62" y1="165.1" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
-<label x="134.62" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN6" gate="-1" pin="SK"/>
-<wire x1="154.94" y1="165.1" x2="162.56" y2="165.1" width="0.1524" layer="91"/>
-<label x="154.94" y="165.1" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CN3_GND" class="0">
-<segment>
-<pinref part="CN3" gate="-1" pin="S"/>
-<wire x1="99.06" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
-<label x="88.9" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN3" gate="-2" pin="S"/>
-<wire x1="99.06" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<label x="88.9" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN9" gate="-1" pin="SK"/>
-<wire x1="200.66" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
-<label x="200.66" y="147.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USB_GND" class="0">
-<segment>
-<pinref part="CN4" gate="-4" pin="SK"/>
-<wire x1="109.22" y1="30.48" x2="119.38" y2="30.48" width="0.1524" layer="91"/>
-<label x="111.76" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN10" gate="-4" pin="SK"/>
-<wire x1="200.66" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
-<label x="200.66" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CN5_GND" class="0">
-<segment>
-<pinref part="CN5" gate="-1" pin="S"/>
-<wire x1="99.06" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
-<label x="88.9" y="15.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN11" gate="-2" pin="SK"/>
-<wire x1="175.26" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="175.26" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN12" gate="-2" pin="SK"/>
-<wire x1="200.66" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
-<label x="200.66" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CN13" gate="-2" pin="SK"/>
-<wire x1="226.06" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<label x="226.06" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -7237,6 +7209,32 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="CN14" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="129.54" x2="38.1" y2="129.54" width="0.1524" layer="91"/>
 <label x="22.86" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CN5_GND" class="0">
+<segment>
+<pinref part="CN5" gate="-1" pin="S"/>
+<wire x1="99.06" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="91"/>
+<label x="88.9" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CN3_GND" class="0">
+<segment>
+<pinref part="CN3" gate="-1" pin="S"/>
+<wire x1="99.06" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<label x="88.9" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CN3" gate="-2" pin="S"/>
+<wire x1="99.06" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+<label x="88.9" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CN2_GND" class="0">
+<segment>
+<pinref part="CN2" gate="-1" pin="S"/>
+<wire x1="55.88" y1="73.66" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+<label x="55.88" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
