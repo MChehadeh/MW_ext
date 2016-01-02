@@ -151,7 +151,7 @@
 <rectangle x1="74.02" y1="71.65" x2="96.88" y2="97.05" layer="51"/>
 <text x="1.565" y="7.2" size="2.54" layer="21">Self-tuning lab</text>
 <text x="1.905" y="2.54" size="1.778" layer="21">Boiko, Chehadeh</text>
-<text x="26.67" y="3.175" size="1.778" layer="21">MW ext. board V1.0</text>
+<text x="25.52" y="2.725" size="1.778" layer="21">MW ext. board V1.0</text>
 <text x="10.5" y="75.97" size="1.778" layer="21" rot="R90">Boost converter</text>
 <text x="86.085" y="74.825" size="1.778" layer="21" rot="R90">Bluetooth Module</text>
 <text x="29.465" y="41.885" size="3.81" layer="21">MultiWii Board</text>
@@ -167,6 +167,9 @@
 <wire x1="71.1" y1="68.35" x2="71.1" y2="18.35" width="0.2032" layer="21"/>
 <wire x1="71.1" y1="18.35" x2="21.1" y2="18.35" width="0.2032" layer="21"/>
 <hole x="26.1" y="23.35" drill="1.6"/>
+<text x="7.03" y="69.81" size="1.016" layer="21">GND</text>
+<text x="7.71" y="47.46" size="1.016" layer="21" rot="R90">5V</text>
+<text x="26.33" y="97.69" size="0.508" layer="21" rot="R180">3.3V</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1081,30 +1084,56 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="adafruit" package="C0805" value="" x="19.73" y="85.24" rot="R270"/>
-<element name="C2" library="adafruit" package="C0805" value="" x="28.37" y="85.24" rot="R270"/>
-<element name="CN10" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="95.5" y="33.07" rot="R270"/>
-<element name="CN11" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="58.03" y="4.89" rot="R180"/>
-<element name="CN12" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="73.3" y="4.86" rot="R180"/>
-<element name="CN13" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="87.54" y="4.64" rot="R180"/>
-<element name="CN14" library="pinhead" package="1X02" value="" x="9.865" y="72.795" rot="R180"/>
-<element name="CN15" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="13.53" y="54" rot="R90"/>
-<element name="CN16" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="4.56" y="45.85" rot="R90"/>
-<element name="CN17" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="23.17" y="95.06" smashed="yes">
-<attribute name="NAME" x="21.48" y="99.77" size="1.778" layer="25" ratio="10"/>
-<attribute name="VALUE" x="21.38" y="88.691" size="1.778" layer="27" ratio="10"/>
+<element name="C1" library="adafruit" package="C0805" value="" x="19.73" y="85.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.726" y="84.819" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="17.444" y="86.129" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="CN2" library="con-molex" package="53047-08" value="53047-08" x="50.79" y="71.73">
+<element name="C2" library="adafruit" package="C0805" value="" x="28.37" y="85.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="29.386" y="85.729" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="26.084" y="86.129" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="CN10" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="95.5" y="33.07" smashed="yes" rot="R270">
+<attribute name="NAME" x="88.85" y="34.09" size="1.778" layer="25" ratio="10" rot="R270"/>
+</element>
+<element name="CN11" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="58.03" y="4.89" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.43" y="11.29" size="1.778" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="CN12" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="73.3" y="4.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="75.4" y="11.19" size="1.778" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="CN13" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="87.54" y="4.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="89.5" y="11.24" size="1.778" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="CN14" library="pinhead" package="1X02" value="" x="9.865" y="72.795" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.7712" y="73.3262" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="12.405" y="75.97" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="CN15" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="13.53" y="54" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.98" y="52.11" size="1.778" layer="25" ratio="10" rot="R90"/>
+</element>
+<element name="CN16" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="4.56" y="45.85" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.36" y="43.9" size="1.778" layer="25" ratio="10" rot="R90"/>
+</element>
+<element name="CN17" library="con-phoenix-250" package="MCV2" value="MCV_05/2-G-2,5V" x="23.17" y="95.06" smashed="yes">
+<attribute name="NAME" x="18.76" y="88.46" size="1.778" layer="25" ratio="10"/>
+</element>
+<element name="CN2" library="con-molex" package="53047-08" value="53047-08" x="50.79" y="71.73" smashed="yes">
 <attribute name="OC_NEWARK" value="98K9826" x="50.79" y="71.73" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="53047-0810" x="50.79" y="71.73" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="50.79" y="71.73" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1012258" x="50.79" y="71.73" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.655" y="73.56" size="1.27" layer="25"/>
+<attribute name="VALUE" x="51.915" y="73.48" size="1.27" layer="27"/>
 </element>
-<element name="CN24" library="SparkFun-Connectors" package="1X10" value="" x="75.29" y="72.92" rot="R90">
+<element name="CN24" library="SparkFun-Connectors" package="1X10" value="" x="75.29" y="72.92" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="CONN-11563" x="75.29" y="72.92" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="73.2012" y="74.9038" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="78.465" y="71.65" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CN25" library="SparkFun-Connectors" package="1X10" value="" x="95.61" y="95.78" rot="R270">
+<element name="CN25" library="SparkFun-Connectors" package="1X10" value="" x="95.61" y="95.78" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="CONN-11563" x="95.61" y="95.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="97.3688" y="96.0662" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="92.435" y="97.05" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="CN3" library="con-molex" package="53047-06" value="53047-06" x="78.13" y="54.14" rot="R270">
 <attribute name="OC_NEWARK" value="03M2965" x="78.13" y="54.14" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1112,33 +1141,68 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="78.13" y="54.14" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="9733078" x="78.13" y="54.14" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="CN4" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="78.65" y="42.37" rot="R270"/>
-<element name="CN5" library="con-molex" package="53047-04" value="53047-04" x="79.43" y="26.685" rot="R90">
+<element name="CN4" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="78.65" y="42.37" smashed="yes" rot="R270">
+<attribute name="NAME" x="83.55" y="39.71" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="72.281" y="46.66" size="1.778" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="CN5" library="con-molex" package="53047-04" value="53047-04" x="79.43" y="26.685" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="38C9900" x="79.43" y="26.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="53047-0410" x="79.43" y="26.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="WALDOM/MOLEX" x="79.43" y="26.685" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="9733060" x="79.43" y="26.685" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="82.84" y="24.5" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="82.68" y="24.06" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CN6" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="34.29" y="95.105"/>
-<element name="CN7" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="48.065" y="95.235"/>
-<element name="CN8" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="61.74" y="95.395"/>
-<element name="CN9" library="con-phoenix-250" package="MCV6" value="MCV_05/6-G-2,5V" x="95.29" y="49.76" rot="R270"/>
+<element name="CN6" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="34.29" y="95.105" smashed="yes">
+<attribute name="NAME" x="32.85" y="92.995" size="1.778" layer="25" ratio="10"/>
+</element>
+<element name="CN7" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="48.065" y="95.235" smashed="yes">
+<attribute name="NAME" x="47.085" y="87.675" size="1.778" layer="25" ratio="10"/>
+</element>
+<element name="CN8" library="con-phoenix-250" package="MCV4" value="MCV_05/4-G-2,5V" x="61.74" y="95.395" smashed="yes">
+<attribute name="NAME" x="60.17" y="88.855" size="1.778" layer="25" ratio="10"/>
+</element>
+<element name="CN9" library="con-phoenix-250" package="MCV6" value="MCV_05/6-G-2,5V" x="95.29" y="49.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="88.33" y="54.98" size="1.778" layer="25" ratio="10" rot="R270"/>
+</element>
 <element name="D1" library="SparkFun-LED" package="LED-1206" value="RED" x="76.69" y="62.91" rot="R90">
 <attribute name="PROD_ID" value="DIO-09912" x="76.69" y="62.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="JP1" library="SparkFun-Connectors" package="1X03" value="" x="38.41" y="72.97" rot="R180"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X03" value="" x="38.42" y="77.74" rot="R180"/>
 <element name="JP3" library="SparkFun-Connectors" package="1X03" value="" x="38.42" y="82.82" rot="R180"/>
-<element name="SJ3" library="jumper" package="SJW" value="" x="56.81" y="82.87" rot="R270"/>
-<element name="SJ2" library="jumper" package="SJW" value="" x="62.56" y="82.93" rot="R270"/>
-<element name="SJ1" library="jumper" package="SJW" value="" x="68.28" y="82.9" rot="R270"/>
-<element name="SJ4" library="jumper" package="SJW" value="" x="91.38" y="68.3" rot="R270"/>
-<element name="SJ5" library="jumper" package="SJW" value="" x="86.05" y="68.17" rot="R270"/>
-<element name="SW1" library="SparkFun-Electromechanical" package="SWITCH-SPDT" value="" x="8.27" y="65.02" rot="R270">
-<attribute name="PROD_ID" value="SWCH-08261" x="8.27" y="65.02" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="SJ3" library="jumper" package="SJW" value="" x="56.81" y="82.87" smashed="yes" rot="R270">
+<attribute name="NAME" x="58.588" y="85.029" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="56.81" y="81.87" size="0.02" layer="27" rot="R270"/>
 </element>
-<element name="U1" library="adafruit" package="SOT23-5L" value="LP298XS" x="24.385" y="85.155" rot="R270"/>
-<element name="U2" library="40xx" package="SO16" value="4049D" x="23.315" y="76.15" rot="R90"/>
+<element name="SJ2" library="jumper" package="SJW" value="" x="62.56" y="82.93" smashed="yes" rot="R270">
+<attribute name="NAME" x="64.338" y="85.089" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="62.56" y="81.93" size="0.02" layer="27" rot="R270"/>
+</element>
+<element name="SJ1" library="jumper" package="SJW" value="" x="68.28" y="82.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.058" y="85.059" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="68.28" y="81.9" size="0.02" layer="27" rot="R270"/>
+</element>
+<element name="SJ4" library="jumper" package="SJW" value="" x="91.38" y="68.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="93.158" y="70.459" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="91.38" y="67.3" size="0.02" layer="27" rot="R270"/>
+</element>
+<element name="SJ5" library="jumper" package="SJW" value="" x="86.05" y="68.17" smashed="yes" rot="R270">
+<attribute name="NAME" x="87.828" y="70.329" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="86.05" y="67.17" size="0.02" layer="27" rot="R270"/>
+</element>
+<element name="SW1" library="SparkFun-Electromechanical" package="SWITCH-SPDT" value="" x="8.27" y="65.02" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="SWCH-08261" x="8.27" y="65.02" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="14.77" y="65.95" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="-1.255" y="68.83" size="1.778" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="U1" library="adafruit" package="SOT23-5L" value="LP298XS" x="24.385" y="85.155" smashed="yes" rot="R270">
+<attribute name="NAME" x="23.55" y="82.06" size="1.27" layer="25"/>
+<attribute name="VALUE" x="20.956" y="87.06" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="U2" library="40xx" package="SO16" value="4049D" x="23.315" y="76.15" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.397" y="74.059" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
 <element name="R1" library="SparkFun-Resistors" package="0805" value="" x="68.6" y="77.304921875" rot="R270"/>
 <element name="R2" library="SparkFun-Resistors" package="0805" value="" x="59.03" y="77.434921875" rot="R270"/>
 <element name="R3" library="SparkFun-Resistors" package="0805" value="" x="86.92" y="64.21" rot="R180"/>
@@ -1410,25 +1474,24 @@ design rules under a new name.</description>
 <wire x1="7.98104375" y1="57.35895625" x2="7.98104375" y2="57.4746125" width="0.254" layer="1"/>
 <wire x1="7.98104375" y1="57.4746125" x2="10.81" y2="65.02" width="0.254" layer="1"/>
 <wire x1="34.29" y1="95.105" x2="34.29" y2="97.09" width="0.254" layer="1"/>
-<wire x1="34.29" y1="97.09" x2="35.67" y2="98.47" width="0.254" layer="1"/>
-<wire x1="35.67" y1="98.47" x2="48.32" y2="98.47" width="0.254" layer="1"/>
-<wire x1="48.32" y1="98.47" x2="60.96" y2="98.47" width="0.254" layer="1"/>
-<wire x1="60.96" y1="98.47" x2="61.74" y2="97.69" width="0.254" layer="1"/>
-<wire x1="61.74" y1="97.69" x2="61.8" y2="97.63" width="0.254" layer="1"/>
-<wire x1="61.8" y1="97.63" x2="61.8" y2="95.455" width="0.254" layer="1"/>
-<wire x1="61.8" y1="95.455" x2="61.74" y2="95.395" width="0.254" layer="1"/>
-<wire x1="48.065" y1="95.235" x2="48.065" y2="98.215" width="0.254" layer="1"/>
-<wire x1="48.065" y1="98.215" x2="48.32" y2="98.47" width="0.254" layer="1"/>
+<wire x1="34.29" y1="97.09" x2="35.89" y2="99.34" width="0.254" layer="1"/>
+<wire x1="35.89" y1="99.34" x2="48.68" y2="99.35" width="0.254" layer="1"/>
+<wire x1="48.68" y1="99.35" x2="61.17" y2="99.35" width="0.254" layer="1"/>
+<wire x1="61.17" y1="99.35" x2="61.74" y2="97.63" width="0.254" layer="1"/>
+<wire x1="61.74" y1="97.63" x2="61.77" y2="95.455" width="0.254" layer="1"/>
+<wire x1="61.77" y1="95.455" x2="61.74" y2="95.395" width="0.254" layer="1"/>
+<wire x1="48.065" y1="95.235" x2="48.055" y2="98.185" width="0.254" layer="1"/>
+<wire x1="48.055" y1="98.185" x2="48.68" y2="99.35" width="0.254" layer="1"/>
 <wire x1="90.04" y1="4.64" x2="90.04" y2="8.09" width="0.254" layer="1"/>
-<wire x1="90.04" y1="8.09" x2="98.73" y2="16.78" width="0.254" layer="1"/>
-<wire x1="98.73" y1="16.78" x2="98.73" y2="50.27" width="0.254" layer="1"/>
-<wire x1="98.73" y1="50.27" x2="96.74" y2="52.26" width="0.254" layer="1"/>
+<wire x1="90.04" y1="8.09" x2="99.07" y2="16.7" width="0.254" layer="1"/>
+<wire x1="99.07" y1="16.7" x2="99.1" y2="50.15" width="0.254" layer="1"/>
+<wire x1="99.1" y1="50.15" x2="96.74" y2="52.26" width="0.254" layer="1"/>
 <wire x1="95.29" y1="52.26" x2="96.74" y2="52.26" width="0.254" layer="1"/>
 <wire x1="96.74" y1="52.26" x2="99.14" y2="54.66" width="0.254" layer="1"/>
 <wire x1="99.14" y1="54.66" x2="99.14" y2="95.78" width="0.254" layer="1"/>
-<wire x1="99.14" y1="95.78" x2="96.12" y2="98.8" width="0.254" layer="1"/>
-<wire x1="96.12" y1="98.8" x2="62.85" y2="98.8" width="0.254" layer="1"/>
-<wire x1="62.85" y1="98.8" x2="61.74" y2="97.69" width="0.254" layer="1"/>
+<wire x1="99.14" y1="95.78" x2="96.29" y2="99.33" width="0.254" layer="1"/>
+<wire x1="96.29" y1="99.33" x2="62.88" y2="99.35" width="0.254" layer="1"/>
+<wire x1="62.88" y1="99.35" x2="61.74" y2="97.63" width="0.254" layer="1"/>
 <wire x1="90.04" y1="4.64" x2="90.04" y2="6.62" width="0.254" layer="1"/>
 <wire x1="90.04" y1="6.62" x2="88.53" y2="8.13" width="0.254" layer="1"/>
 <wire x1="88.53" y1="8.13" x2="79.07" y2="8.13" width="0.254" layer="1"/>
@@ -1660,13 +1723,6 @@ design rules under a new name.</description>
 <signal name="CN4_GND">
 <contactref element="CN4" pad="4"/>
 </signal>
-<signal name="N$9">
-<polygon width="0.2032" layer="16">
-<vertex x="0" y="99.98"/>
-<vertex x="99.97" y="99.98"/>
-<vertex x="-0.03" y="99.99"/>
-</polygon>
-</signal>
 <signal name="N$13">
 </signal>
 <signal name="N$14">
@@ -1691,6 +1747,38 @@ design rules under a new name.</description>
 <approved hash="1,20,c83434c434cfc83f"/>
 <approved hash="1,20,357ac98ac89e346e"/>
 <approved hash="1,20,c6263ad638c7c437"/>
+<approved hash="18,29,f3cef1250f290fc2"/>
+<approved hash="18,29,c664d26686626c78"/>
+<approved hash="18,29,ddc940b34efd0db8"/>
+<approved hash="18,29,2c40b29dba9ea545"/>
+<approved hash="18,29,e5b67dd875d65d9f"/>
+<approved hash="18,29,1ab66fc66c481938"/>
+<approved hash="18,29,18486d386c0a197a"/>
+<approved hash="18,29,e037792d2e75213e"/>
+<approved hash="18,29,284e8704f7e5ffdf"/>
+<approved hash="18,29,e442728bf188d847"/>
+<approved hash="18,29,25b4b5ce08c0169d"/>
+<approved hash="18,29,e38fde4d20491f8b"/>
+<approved hash="18,29,44b73fc73c484738"/>
+<approved hash="18,29,46493d393c0a477a"/>
+<approved hash="18,29,a2372d39fb617c3e"/>
+<approved hash="18,29,7c4ec510aaf12adf"/>
+<approved hash="18,29,5d8d21f80af27687"/>
+<approved hash="18,29,e0d9ba50ba57e0de"/>
+<approved hash="18,29,e0ded9d7d9d7e0de"/>
+<approved hash="18,29,d76de102e102d76d"/>
+<approved hash="18,29,b9b30538853739bc"/>
+<approved hash="18,29,ad080991899e2d07"/>
+<approved hash="18,29,b45a10a390ac3455"/>
+<approved hash="18,29,ce15c0c5f5c9fb19"/>
+<approved hash="18,29,ce166a9eea914e19"/>
+<approved hash="18,29,40c646dfc6d3c0ca"/>
+<approved hash="18,29,6352d447829d87d6"/>
+<approved hash="18,29,4988098f0594c309"/>
+<approved hash="18,29,326f9f771f78b260"/>
+<approved hash="18,29,27c483cc03c3a7cb"/>
+<approved hash="18,29,f8096b5054b2e020"/>
+<approved hash="18,29,731605ccd0310669"/>
 <approved hash="18,29,7646ac3f6ef3e814"/>
 <approved hash="18,29,6f3c44beaff3e71e"/>
 <approved hash="18,29,20b27b391ef2e218"/>
@@ -1702,43 +1790,60 @@ design rules under a new name.</description>
 <approved hash="18,29,93c7fa35922bbc5b"/>
 <approved hash="18,29,7dbe14b58cdfa7a2"/>
 <approved hash="18,29,47302f3575cb5bac"/>
+<approved hash="18,29,fb39fcfcebdfe393"/>
+<approved hash="18,29,892c58562231f8b6"/>
+<approved hash="18,29,0fabfccc31abc233"/>
+<approved hash="18,29,14318f48572d85ac"/>
 <approved hash="18,29,40c94eaeefa55cad"/>
 <approved hash="18,29,a223e8a4cbf54088"/>
 <approved hash="18,29,d92321a51afb1884"/>
 <approved hash="18,29,e2225ea553ebd094"/>
 <approved hash="18,29,44154d0e390e3015"/>
 <approved hash="18,29,487257f5d7f5c872"/>
-<approved hash="18,29,4fa7b488aec94dfb"/>
-<approved hash="18,29,c05d70ca6a99f0f2"/>
 <approved hash="18,29,e361909c37a34c5c"/>
 <approved hash="18,29,acd99c22402270d9"/>
 <approved hash="18,29,9393096f5850caae"/>
-<approved hash="18,29,79ea5a7f2e7f0dea"/>
 <approved hash="18,29,750343e6c3e6f503"/>
+<approved hash="18,29,79ea5a7f2e7f0dea"/>
 <approved hash="18,29,cbfbcfe8bbe8bffb"/>
 <approved hash="18,29,c740d56055604740"/>
 <approved hash="18,29,e48bd5b109b1388b"/>
 <approved hash="18,29,837b388769bbda45"/>
 <approved hash="18,29,5b982a83fe838f98"/>
-<approved hash="18,29,4b8287ea82e034a2"/>
-<approved hash="18,29,b4e787dd8328caea"/>
-<approved hash="18,29,ff10d39eeed2dd4c"/>
 <approved hash="18,29,56db6bfe97c2a8c7"/>
 <approved hash="18,29,c4f2a7ccf53fe0c3"/>
 <approved hash="18,29,faed2a622d690bdf"/>
 <approved hash="18,29,0e376afb7cac75c5"/>
-<approved hash="18,29,2c85575505c7f868"/>
-<approved hash="18,29,177d681f7f499f4f"/>
 <approved hash="18,29,d8b9afb2fd59f49c"/>
 <approved hash="18,29,9069c240c0eab763"/>
 <approved hash="18,29,1b0a6af77cc06a92"/>
+<approved hash="18,29,a56920d4f236064d"/>
+<approved hash="18,29,6dbbe8e77ea19520"/>
+<approved hash="18,29,2c85575505c7f868"/>
+<approved hash="18,29,177d681f7f499f4f"/>
 <approved hash="18,29,5ed733f4e147eea6"/>
 <approved hash="18,29,f114235b39290b1c"/>
 <approved hash="18,29,850df6bb60ec6bbf"/>
-<approved hash="18,29,a56920d4f236064d"/>
-<approved hash="18,29,6dbbe8e77ea19520"/>
 <approved hash="18,29,52a2234ef1ddf273"/>
 <approved hash="18,29,9160e81b7f4c6154"/>
+<approved hash="18,29,4a592ec88b66f08a"/>
+<approved hash="18,29,1be066f95a8f21d7"/>
+<approved hash="18,29,cbf0aeea8b240e6e"/>
+<approved hash="18,29,65c7122aae5c2bf1"/>
+<approved hash="18,29,31bdae868bb8fa23"/>
+<approved hash="18,29,91fa1126ad50dfcc"/>
+<approved hash="18,29,458c2ee48b7a04f5"/>
+<approved hash="18,29,efad9e67a2112d1c"/>
+<approved hash="18,29,3d57766fa26fe957"/>
+<approved hash="18,29,0536b4d0c1d67030"/>
+<approved hash="18,29,56ea4383378322ea"/>
+<approved hash="18,29,4a03490ac90aca03"/>
+<approved hash="18,29,09589eb2ebb47c5e"/>
+<approved hash="18,29,38c8b334e20b51f5"/>
+<approved hash="18,29,e8a1c932bd329ca1"/>
+<approved hash="18,29,f50edf8a5f8a750e"/>
+<approved hash="18,29,c646fa56065a3842"/>
+<approved hash="18,29,eab2d7832b8714be"/>
 <approved hash="5,1,9c3000f3bb74e72a"/>
 <approved hash="5,1,a7be3b73ed74b124"/>
 <approved hash="5,1,a92435f38d74d13e"/>
@@ -1750,9 +1855,9 @@ design rules under a new name.</description>
 <approved hash="5,1,602a7f5889d60ba4"/>
 <approved hash="5,1,e667ff3189740d22"/>
 <approved hash="5,1,7c8f7f3e896e17df"/>
+<approved hash="5,1,50a4b3b839e67ffa"/>
 <approved hash="5,1,a411b31239548b57"/>
 <approved hash="5,1,2edc33be39fe819c"/>
-<approved hash="5,1,50a4b3b839e67ffa"/>
 <approved hash="5,16,9c3000f3bb74e72a"/>
 <approved hash="5,16,a7be3b73ed74b124"/>
 <approved hash="5,16,a92435f38d74d13e"/>
